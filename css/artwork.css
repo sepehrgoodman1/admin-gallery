@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Poppins', sans-serif;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fw-500{
+    font-weight: 500;
+}
+.filterTitle{
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+.fs18_fw500{
+    font-weight: 600;
+    font-size: 18px;
+}
+.text-inbox{
+    font-weight: 500;
+    font-size: 14px;
+    color: #83909D;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.text-inbox:hover{
+    font-weight: 500;
+    font-size: 14px;
+    color: #242328;
+    cursor: pointer;
+}
+.badges{
+    border-radius: 50px;
+    padding: 2px 7px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #242328;
+    margin-right: 9px;
+}
+.badgeGreen{
+    background-color: #A6E9DE;
+}
+.badgeOrange{
+    background-color: #FED6CC;
+}
+.badgeBlue{
+    background-color: #A6D5E9;
+}
+.badgePink{
+    background-color: #FBCDE8;
+}
+.badgeGray{
+    background-color: #EEF0F3;
+}
+.badges-dot{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50px;
+    position: relative;
+    bottom: 3px;
+    margin-right: 7px;
+}
+.line-header{
+    height: 1px;
+    width: 100%;
+    background-color: #EEF0F3;
+    position: absolute;
+    top: 52px;
+}
+.inputSearch{
+    width: 100%;
+    padding: 4px 10px 4px 32px;
+    border-radius: 6px;
+    border: none;
+    background-color: #F7F8FA;
+}
+.inputSearch::placeholder{
+    font-size: 12px;
+    color: #A8B3BC;
+    position: relative;
+    bottom: 2px;
+}
+.inputSearch:focus{
+    outline: 2px solid #3772FF;
+}
+.p_inputSearch{
+    width: 300px;
+}
+.imgSearch{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+
+/* customize  */
+.filterSelect{
+    border: none;
+    font-size: 14px;
+    color: #83909D;
+    height: 30px;
+    width: 90px;
+}
+.filterSelect:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* table */
+.tableArtwork{
+    width: 100%;
+}
+.header_table{
+    text-align: left;
+    height: 65px;
+}
+.header_checkbox{
+    width: 3%;
+    border-bottom: 2px solid #F5F7FA;
+}
+.headerArtwork{
+    font-size: 12px;
+    color: #A8B3BC;
+    font-weight: 400;
+    border-bottom: 2px solid #F5F7FA;
+    width: 6.5%;
+    padding-left: 10px;
+}
+.headerName{
+    width: 19%;
+    border-bottom: 2px solid #F5F7FA;
+}
+.headerArtistName{
+    font-size: 12px;
+    color: #A8B3BC;
+    font-weight: 400;
+    border-bottom: 2px solid #F5F7FA;
+    width: 20%;
+}
+.headerPhone{
+    font-size: 12px;
+    color: #A8B3BC;
+    font-weight: 400;
+    border-bottom: 2px solid #F5F7FA;
+    width: 18%;
+}
+.headerEmail{
+    font-size: 12px;
+    color: #A8B3BC;
+    font-weight: 400;
+    border-bottom: 2px solid #F5F7FA;
+    width: 21%;
+}
+.headerPrice{
+    font-size: 12px;
+    color: #A8B3BC;
+    font-weight: 400;
+    border-bottom: 2px solid #F5F7FA;
+    width: 21%;
+}
+.tableData{
+    height: 95px;
+    position: relative;
+    cursor: pointer;
+}
+.artist_checkBox{
+    border-bottom: 2px solid #F5F7FA;
+}
+.artist_Pic{
+    border-bottom: 2px solid #F5F7FA;
+}
+.nameArtwork{
+    font-size: 14px;
+    font-weight: 500;
+    color: #242328;
+    border-bottom: 2px solid #F5F7FA;
+}
+.infoArtist{
+    font-size: 14px;
+    color: #242328;
+    border-bottom: 2px solid #F5F7FA;
+}
+.artistStatus{
+    font-size: 14px;
+    color: #242328;
+    border-bottom: 2px solid #F5F7FA;
+}
+.artworkMedium{
+    font-size: 14px;
+    color: #242328;
+    border-bottom: 2px solid #F5F7FA;
+}
+.artworkPrice{
+    font-size: 14px;
+    color: #242328;
+    border-bottom: 2px solid #F5F7FA;
+}
+
+/* checkBox */
+ .form-group input{
+     display: none;
+ }
+ .form-group .label_checkBox{
+     display: flex;
+     align-items: center;
+     grid-gap: 16px;
+     cursor: pointer;
+     transition: 0.1s ease;
+ }
+ .form-group .label_checkBox .checkbox{
+    width: 21px;
+    height: 21px;
+    background-color: #EEF0F3;
+    position: relative;
+    border-radius: 4px;
+    transition: 0.1s ease;
+
+
+}
+.form-group .label_checkBox .checkbox::before{
+    content: '';
+    position: absolute;
+    top: 2.1px;
+    bottom: 2.5px;
+    right: 3px;
+    left: 2px;
+    background-color: white;
+    border-radius: 3px;
+    transition: 0.1s ease;
+}
+.form-group input:checked + .label_checkBox .checkbox::before{
+    top: 11.5px;
+    bottom: 11.5px;
+    right:11.5px;
+    left:11.5px;
+    border-radius: 50%;
+
+}
+
+.form-group input:checked + .label_checkBox .checkbox{
+    background-color: #3772FF;
+}
+.form-group .label_checkBox .check{
+    display: block;
+    width: 12px;
+    height: 6px;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%) rotateZ(-45deg);
+    transition: 0.1s ease;
+
+}
+.label_checkBox .checkbox .check::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: white;
+    transition: 0.1s ease;
+    transition-delay: 0.1s;
+}
+.label_checkBox .checkbox .check::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.1s ease;
+    transition-delay: 0s;
+}
+.form-group input:checked + .label_checkBox .checkbox .check::before{
+    height: 100%;
+    transition-delay: 0.2s;
+}
+.form-group input:checked + .label_checkBox .checkbox .check::after{
+    width: 100%;
+    transition-delay: 0.2s;
+}
+
