@@ -38,9 +38,15 @@
           <div class="mt-4 p_arrow">
             <img src="images/icons/Arrow left -.svg" class="arrow__effect" />
           </div>
+
+          <!-- Img side Menu -->
           <div class="mt-3">
-            <img src="images/info creator.png" class="radius_8" />
+            <div
+              class="img_sideMenu"
+              style="background-image: url(images/info\ creator.png)"
+            ></div>
           </div>
+
           <div class="mt-3 Black_SWAN_text">Black SWAN</div>
           <div class="mt-2 published_text">
             <span class="badge__dot badgeGray"></span>Not Published
@@ -48,7 +54,14 @@
 
           <div class="btn btn-primary publish_btn">Publish</div>
           <div class="btn UnPublish_btn">UnPublish</div>
-          <div class="btn Under_Review_btn">Under Review</div>
+          <!-- Button to Open the Modal -->
+          <div
+            class="btn Under_Review_btn"
+            data-bs-toggle="modal"
+            data-bs-target="#UnderReview"
+          >
+            Under Review
+          </div>
 
           <div class="line mt-4 mb-3"></div>
 
@@ -109,19 +122,34 @@
           <!-- Images Information -->
           <div class="p_img_info">
             <div class="me-3 mt-2">
-              <img src="images/img information.png" class="img_information" />
+              <div
+                class="img_information"
+                style="background-image: url(images/img\ information.png)"
+              ></div>
             </div>
             <div class="me-3 mt-2">
-              <img src="images/img information.png" class="img_information" />
+              <div
+                class="img_information"
+                style="background-image: url(images/img\ information.png)"
+              ></div>
             </div>
             <div class="me-3 mt-2">
-              <img src="images/img information.png" class="img_information" />
+              <div
+                class="img_information"
+                style="background-image: url(images/img\ information.png)"
+              ></div>
             </div>
             <div class="me-3 mt-2">
-              <img src="images/img information.png" class="img_information" />
+              <div
+                class="img_information"
+                style="background-image: url(images/img\ information.png)"
+              ></div>
             </div>
             <div class="mt-2">
-              <img src="images/img information.png" class="img_information" />
+              <div
+                class="img_information"
+                style="background-image: url(images/img\ information.png)"
+              ></div>
             </div>
           </div>
 
@@ -139,9 +167,10 @@
             </div>
           </div>
 
+          <!-- artist -->
           <div class="d-flex justify-content-between mt_35">
             <div class="d-flex align-items-center">
-              <img src="images/guy.png" />
+              <div class="img_artist" style="background-image: url(images/guy.png);"></div>
               <div class="artist_name">Esther Howard</div>
             </div>
             <button class="btn btn_gray d-flex align-items-center">
@@ -157,7 +186,11 @@
               <div class="name_text">Name :</div>
               <div class="name_value">Esther Howard</div>
             </div>
-            <button class="btn btn_text_primary d-flex align-items-center">
+            <button
+              class="btn btn_text_primary d-flex align-items-center"
+              data-bs-toggle="modal"
+              data-bs-target="#EditName"
+            >
               <img src="images/icons/Edit.svg" class="me-2" />
               <div class="edit_text text-primary">Edit</div>
             </button>
@@ -170,7 +203,11 @@
               <div class="name_text">Medium :</div>
               <div class="name_value">Painting - Oil on paper</div>
             </div>
-            <button class="btn btn_text_primary d-flex align-items-center">
+            <button
+              class="btn btn_text_primary d-flex align-items-center"
+              data-bs-toggle="modal"
+              data-bs-target="#EditMedium"
+            >
               <img src="images/icons/Edit.svg" class="me-2" />
               <div class="edit_text text-primary">Edit</div>
             </button>
@@ -180,7 +217,6 @@
           <div class="mt_35">
             <div class="fw_500 mb-1">Timeline</div>
             <div class="P_itemsTimeLine">
-
               <div class="mt-2">
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="d-flex">
@@ -198,7 +234,6 @@
                 </div>
                 <div class="p_infoText">
                   <div class="fs12_clGray">Tracking info</div>
-                  <button class="btn btn_text_primary text-primary fs_12 py-0 me_10">Edit</button>
                 </div>
               </div>
 
@@ -218,7 +253,10 @@
                   </div>
                 </div>
                 <div class="p_infoText">
-                  <div class="fs12_clGray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                  <div class="fs12_clGray">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </div>
                 </div>
               </div>
 
@@ -229,7 +267,7 @@
                       <img src="images/icons/Ellipse.svg" class="elips_pic" />
                       <span class="line_elips"></span>
                     </div>
-                    <div class="fs_14">Artwork Minted </div>
+                    <div class="fs_14">Artwork Minted</div>
                   </div>
                   <div class="d-flex">
                     <div class="fs12_clGray me-3">28-10-2021</div>
@@ -238,7 +276,10 @@
                   </div>
                 </div>
                 <div class="p_infoText">
-                  <div class="fs12_clGray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                  <div class="fs12_clGray">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </div>
                 </div>
               </div>
 
@@ -249,7 +290,7 @@
                       <img src="images/icons/Ellipse.svg" class="elips_pic" />
                       <span class="line_elips"></span>
                     </div>
-                    <div class="fs_14">Artwork Created </div>
+                    <div class="fs_14">Artwork Created</div>
                   </div>
                   <div class="d-flex">
                     <div class="fs12_clGray me-3">28-10-2021</div>
@@ -258,11 +299,200 @@
                   </div>
                 </div>
                 <div class="p_infoText">
-                  <div class="fs12_clGray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                  <div class="fs12_clGray">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </div>
                 </div>
               </div>
-
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Modal ( Under Review ) -->
+    <div class="modal fade" id="UnderReview">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal_info">
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="header_modal">More info needed</div>
+              <div>
+                <img
+                  src="/images/icons/Close.svg"
+                  class="btn_close"
+                  data-bs-dismiss="modal"
+                />
+              </div>
+            </div>
+
+            <div class="p_consignMent">
+              <div>
+                <img src="images/icons/Info blue.svg" />
+              </div>
+              <div class="font_consignment">
+                as soon as this consignment is official the values for
+                Consignment cost will be overrided in artwork
+              </div>
+            </div>
+
+            <!-- sections -->
+            <div class="p_sec">
+              <div class="sec_text">Artowrk info</div>
+
+              <!-- Check Box -->
+              <div class="p_check">
+                <form class="form-group d-flex">
+                  <input type="checkbox" id="Title" />
+                  <label for="Title" class="label_checkBox">
+                    <span class="checkbox">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                  <label class="text_lebel" for="Title">Title </label>
+                </form>
+              </div>
+              <div class="p_check">
+                <form class="form-group d-flex">
+                  <input type="checkbox" id="Artist" />
+                  <label for="Artist" class="label_checkBox">
+                    <span class="checkbox">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                  <label class="text_lebel" for="Artist">Artist </label>
+                </form>
+              </div>
+              <div class="p_check">
+                <form class="form-group d-flex">
+                  <input type="checkbox" id="Year made" />
+                  <label for="Year made" class="label_checkBox">
+                    <span class="checkbox">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                  <label class="text_lebel" for="Year made">Year made </label>
+                </form>
+              </div>
+            </div>
+
+            <div class="p_sec">
+              <div class="sec_text">Proofs</div>
+
+              <!-- Check Box -->
+              <div class="p_check">
+                <form class="form-group d-flex">
+                  <input type="checkbox" id="proofs" />
+                  <label for="proofs" class="label_checkBox">
+                    <span class="checkbox">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                  <label class="text_lebel" for="proofs"
+                    >Ask for more proofs
+                  </label>
+                </form>
+              </div>
+            </div>
+
+            <!-- status -->
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <div class="status_text">
+                Statuse : <span style="color: black">Not sent</span>
+              </div>
+              <div>
+                <button class="btn btn_req">
+                  <img src="images/icons/Send.svg" /> Request user
+                </button>
+              </div>
+            </div>
+
+            <!-- button update -->
+            <div>
+              <button class="btn btn_update">Update Review</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Modal ( Edit Name ) -->
+    <div class="modal fade" id="EditName">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal_info">
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="header_modal">Edit Name</div>
+              <div data-dismiss="modal">
+                <img
+                  src="/images/icons/Close.svg"
+                  class="btn_close"
+                  data-bs-dismiss="modal"
+                />
+              </div>
+            </div>
+
+            <!-- form input -->
+            <form>
+              <div class="mt-4 mb-1">
+                <div class="fs14fw500 mb-1">Name :</div>
+                <input type="text" class="input_name" id="Name" />
+              </div>
+
+              <!-- button update -->
+              <div>
+                <button class="btn btn_update">Update Name</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Modal ( Edit Medium ) -->
+    <div class="modal fade" id="EditMedium">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal_info">
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="header_modal">Edit Medium</div>
+              <div data-dismiss="modal">
+                <img
+                  src="/images/icons/Close.svg"
+                  class="btn_close"
+                  data-bs-dismiss="modal"
+                />
+              </div>
+            </div>
+
+            <!-- form selct -->
+            <form>
+              <div class="mt-4 mb-1">
+                <div class="fs14fw500 mb-1">Medium :</div>
+                <select class="form-select" aria-label="Default select example">
+                  <option class="option" value="1" selected>One</option>
+                  <option class="option" value="2">Two</option>
+                  <option class="option" value="3">Three</option>
+                </select>
+              </div>
+              <div class="mt-2 mb-1">
+                <div class="fs14fw500 mb-1">Style :</div>
+                <select class="form-select" aria-label="Default select example">
+                  <option value="1" selected>One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <!-- button update -->
+              <div>
+                <button class="btn btn_update">Update Medium</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

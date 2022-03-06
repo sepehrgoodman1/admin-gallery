@@ -1,9 +1,33 @@
-// let input_link = document.querySelector('.input_link')
+// copy text to clipboard
+var artlink_clipboard = new ClipboardJS('#btn_artlink');
+var chain_clipboard = new ClipboardJS('#btn_chaincode');
 
-// // if link address was too long, we will cut the link
-// input_link.addEventListener('input', ()=>{
-//     if(input_link.value.length>10){
-//         input_link.value = input_link.value.substring(0,20)
-//         console.log(temp_address)
-//     }
-// })
+artlink_clipboard.on('success', function(e) {
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger);
+
+    e.clearSelection();
+});
+artlink_clipboard.on('error', function(e) {
+    console.error('Action:', e.action);
+    console.error('Trigger:', e.trigger);
+});
+
+chain_clipboard.on('success', function(e) {
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger);
+
+    e.clearSelection();
+});
+chain_clipboard.on('error', function(e) {
+    console.error('Action:', e.action);
+    console.error('Trigger:', e.trigger);
+});
+
+// add or remove class
+$( '.btn_timeLine' ).click(function() {
+    $( '.btn_timeLine' ).removeClass('btn_active_timeline')
+    $( this ).addClass('btn_active_timeline')
+  });

@@ -103,7 +103,6 @@
     border: none;
     font-size: 14px;
     color: #83909D;
-    height: 30px;
     width: 90px;
 }
 .filterSelect:focus{
@@ -173,6 +172,15 @@
 }
 .artist_Pic{
     border-bottom: 2px solid #F5F7FA;
+    
+}
+.img_art{
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
 }
 .nameArtwork{
     font-size: 14px;
