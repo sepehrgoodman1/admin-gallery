@@ -94,7 +94,7 @@
 }
 .imgSearch{
     position: absolute;
-    top: 8px;
+    top: 7px;
     left: 10px;
 }
 
@@ -104,6 +104,8 @@
     font-size: 14px;
     color: #83909D;
     width: 90px;
+    position: relative;
+    top: 1px;
 }
 .filterSelect:focus{
     border: none !important;
@@ -134,12 +136,23 @@
     width: 19%;
     border-bottom: 2px solid #F5F7FA;
 }
+.headerName_artist{
+    width: 17%;
+    border-bottom: 2px solid #F5F7FA;
+}
 .headerArtistName{
     font-size: 12px;
     color: #A8B3BC;
     font-weight: 400;
     border-bottom: 2px solid #F5F7FA;
     width: 20%;
+}
+.headerSpeciality{
+    font-size: 12px;
+    color: #A8B3BC;
+    font-weight: 400;
+    border-bottom: 2px solid #F5F7FA;
+    width: 13%;
 }
 .headerPhone{
     font-size: 12px;
@@ -155,12 +168,30 @@
     border-bottom: 2px solid #F5F7FA;
     width: 21%;
 }
+.headerEmail1{
+    font-size: 12px;
+    color: #A8B3BC;
+    font-weight: 400;
+    border-bottom: 2px solid #F5F7FA;
+    width: 23%;
+}
 .headerPrice{
     font-size: 12px;
     color: #A8B3BC;
     font-weight: 400;
     border-bottom: 2px solid #F5F7FA;
     width: 21%;
+}
+.headerButton{
+    border-bottom: 2px solid #F5F7FA;
+    width: 21%;
+}
+.headerTrash{
+    font-size: 12px;
+    color: #A8B3BC;
+    font-weight: 400;
+    border-bottom: 2px solid #F5F7FA;
+    width: 10%;
 }
 .tableData{
     height: 95px;
@@ -181,6 +212,14 @@
     background-size: cover;
     background-position: center;
     border-radius: 8px;
+}
+.img_artist{
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
 }
 .nameArtwork{
     font-size: 14px;
@@ -203,6 +242,10 @@
     color: #242328;
     border-bottom: 2px solid #F5F7FA;
 }
+.fs14fw500{
+    font-size: 14px;
+    font-weight: 500;
+}
 .artworkPrice{
     font-size: 14px;
     color: #242328;
@@ -210,88 +253,96 @@
 }
 
 /* checkBox */
- .form-group input{
-     display: none;
- }
- .form-group .label_checkBox{
-     display: flex;
-     align-items: center;
-     grid-gap: 16px;
-     cursor: pointer;
-     transition: 0.1s ease;
- }
- .form-group .label_checkBox .checkbox{
-    width: 21px;
-    height: 21px;
-    background-color: #EEF0F3;
-    position: relative;
-    border-radius: 4px;
+/* checkBox */
+.form-group input{
+    display: none;
+}
+.form-group .label_checkBox{
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+    cursor: pointer;
     transition: 0.1s ease;
+}
+.form-group .label_checkBox .checkbox{
+   width: 21px;
+   height: 21px;
+   background-color: #EEF0F3;
+   position: relative;
+   border-radius: 4px;
+   transition: 0.1s ease;
 
 
 }
 .form-group .label_checkBox .checkbox::before{
     content: '';
     position: absolute;
-    top: 2.1px;
-    bottom: 2.5px;
-    right: 3px;
-    left: 2px;
-    background-color: white;
+    top: 1px;
+    bottom: 1px;
+    right: 1px;
+    left: 1px;
+    background-color: #F7F8FA;
     border-radius: 3px;
     transition: 0.1s ease;
 }
 .form-group input:checked + .label_checkBox .checkbox::before{
-    top: 11.5px;
-    bottom: 11.5px;
-    right:11.5px;
-    left:11.5px;
-    border-radius: 50%;
+   top: 11.5px;
+   bottom: 11.5px;
+   right:11.5px;
+   left:11.5px;
+   border-radius: 50%;
 
 }
 
 .form-group input:checked + .label_checkBox .checkbox{
-    background-color: #3772FF;
+   background-color: #3772FF;
 }
 .form-group .label_checkBox .check{
-    display: block;
-    width: 12px;
-    height: 6px;
-    position: absolute;
-    top: 6px;
-    left: 50%;
-    transform: translateX(-50%) rotateZ(-45deg);
-    transition: 0.1s ease;
+   display: block;
+   width: 12px;
+   height: 6px;
+   position: absolute;
+   top: 6px;
+   left: 50%;
+   transform: translateX(-50%) rotateZ(-45deg);
+   transition: 0.1s ease;
 
 }
 .label_checkBox .checkbox .check::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 0;
-    background-color: white;
-    transition: 0.1s ease;
-    transition-delay: 0.1s;
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 2px;
+   height: 0;
+   background-color: white;
+   transition: 0.1s ease;
+   transition-delay: 0.1s;
 }
 .label_checkBox .checkbox .check::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: white;
-    transition: 0.1s ease;
-    transition-delay: 0s;
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 0;
+   height: 2px;
+   background-color: white;
+   transition: 0.1s ease;
+   transition-delay: 0s;
 }
 .form-group input:checked + .label_checkBox .checkbox .check::before{
-    height: 100%;
-    transition-delay: 0.2s;
+   height: 100%;
+   transition-delay: 0.2s;
 }
 .form-group input:checked + .label_checkBox .checkbox .check::after{
-    width: 100%;
-    transition-delay: 0.2s;
+   width: 100%;
+   transition-delay: 0.2s;
 }
-
+/* end customize */
+.line_ver{
+    display: inline-block;
+    height: 20px;
+    width: 1.5px;
+    background-color: #EEF0F3;
+    margin: 0px 22px 0 7px;
+}

@@ -22,39 +22,20 @@
     <link rel="stylesheet" href="css/artwork.css" />
 
     <!-- font Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Artwork</title>
   </head>
 
   <body>
-    <div class="line-header"></div>
-
-    <div class="my-3 mx-4">
-      <div class="d-flex justify-content-between position-relative">
-        <div class="d-flex">
-          <div class="me-3 text-inbox">
-            <span class="badges badgeGreen">10</span>Inbox
-          </div>
-          <div class="me-3 text-inbox">
-            <span class="badges badgeOrange">5</span>Pending
-          </div>
-          <div class="me-3 text-inbox">
-            <span class="badges badgeBlue">2</span>More info
-          </div>
-          <div class="me-3 text-inbox">
-            <span class="badges badgePink">0</span>Reports
-          </div>
-        </div>
-        <div class="mx-3 text-inbox">
-          <span class="badges badgeGray">17</span>All artworks
-        </div>
-      </div>
-
-      <div class="fs18_fw500 mt-5">
-        <span class="badges-dot badgeGreen"></span>Inbox
+    <div class="mx-4">
+      <div class="fs18_fw500 mt-2">
+        <span class="badges-dot badgeGreen"></span>Users
       </div>
 
       <div class="d-flex justify-content-between">
@@ -89,7 +70,6 @@
             </div>
 
             <span class="line_ver"></span>
-
 
             <div>
               <div class="d-flex align-items-center">
@@ -127,13 +107,14 @@
               </form>
             </th>
 
-            <th class="headerArtwork">Artwork</th>
-            <th class="headerName"></th>
-            <th class="headerArtistName">Artist</th>
-            <th class="headerPhone">Statuse</th>
+            <th class="headerArtwork">Artist</th>
+            <th class="headerName_artist"></th>
+            <th class="headerSpeciality">Speciality</th>
+            <th class="headerPhone">Phone number</th>
 
-            <th class="headerEmail">Medium</th>
-            <th class="headerPrice">Submission</th>
+            <th class="headerEmail1">Email address</th>
+            <th class="headerTrash"></th>
+            <th class="headerButton"></th>
           </tr>
           <!-- table body -->
           <tr class="tableData" tabindex="-1">
@@ -148,13 +129,21 @@
               </form>
             </td>
             <td class="artist_Pic">
-              <div class="img_art" style="background-image: url(images/artwork.png);"></div>
+              <div
+                class="img_artist"
+                style="background-image: url(images/guy64_1.png)"
+              ></div>
             </td>
-            <td class="nameArtwork">Black SWAN</td>
-            <td class="infoArtist">Sohrab Sepehri</td>
-            <td class="artistStatus">Inbox</td>
-            <td class="artworkMedium">Painting Oil on paper</td>
-            <td class="artworkPrice">1 hour ago</td>
+            <td class="nameArtwork">Esther Howard</td>
+            <td class="infoArtist">Galleriest</td>
+            <td class="artistStatus">+1 (406) 555-0120</td>
+            <td class="artworkMedium">michael.mitc@example.com</td>
+            <td class="artworkPrice">
+                <img src='images//icons/Trash.svg'/>
+            </td>
+            <td class="artworkPrice">
+                <button class="btn text-primary fs14fw500">View Artist <img src='images/icons/Arrow right blue.svg'/></button>
+            </td>
           </tr>
 
           <tr class="tableData" tabindex="-1">
@@ -168,15 +157,22 @@
                 </label>
               </form>
             </td>
-            <td class="artist_Pic" >
-              <div class="img_art" style="background-image: url(images/testpic.jpg);"></div>
+            <td class="artist_Pic">
+              <div
+                class="img_artist"
+                style="background-image: url(images/guy64_2.png)"
+              ></div>
             </td>
-            <td class="nameArtwork">Black SWAN</td>
-            <td class="infoArtist">Sohrab Sepehri</td>
-            <td class="artistStatus">Inbox</td>
-            <td class="artworkMedium">Painting Oil on paper</td>
-            <td class="artworkPrice">1 hour ago</td>
-
+            <td class="nameArtwork">Annette Black</td>
+            <td class="infoArtist">Galleriest</td>
+            <td class="artistStatus">+1 (406) 555-0120</td>
+            <td class="artworkMedium">michael.mitc@example.com</td>
+            <td class="artworkPrice">
+                <img src='images//icons/Trash.svg'/>
+            </td>
+            <td class="artworkPrice">
+                <button class="btn text-primary fs14fw500">View Artist <img src='images/icons/Arrow right blue.svg'/></button>
+            </td>
           </tr>
         </table>
       </div>
