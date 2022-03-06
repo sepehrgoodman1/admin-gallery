@@ -121,7 +121,7 @@
     height: 65px;
 }
 .header_checkbox{
-    width: 3%;
+    width: 2.5%;
     border-bottom: 2px solid #F5F7FA;
 }
 .headerArtwork{
@@ -130,7 +130,7 @@
     font-weight: 400;
     border-bottom: 2px solid #F5F7FA;
     width: 6.5%;
-    padding-left: 10px;
+    padding-left: 3px;
 }
 .headerName{
     width: 19%;
