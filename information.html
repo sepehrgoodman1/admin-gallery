@@ -44,7 +44,7 @@
           <div class="mt-3">
             <div
               class="img_sideMenu"
-              style="background-image: url(images/info\ creator.png)"
+              style="background-image: url(images/guy1_208.png)"
             ></div>
           </div>
 
@@ -80,9 +80,27 @@
           <div class="w-100 mt-1">
             <button class="btn p_btn_img">
               <div class="p_img_btn">
-                <img src="images/icons/Show.svg" class="image_buttons" />
+                <img src="images/icons/Proofs.svg" class="image_buttons" />
               </div>
-              <div class="btnText">Proofs</div>
+              <div class="btnText">Artworks</div>
+            </button>
+          </div>
+
+          <div class="w-100 mt-1">
+            <button class="btn p_btn_img">
+              <div class="p_img_btn">
+                <img src="images/icons/image5-square.svg" class="image_buttons" />
+              </div>
+              <div class="btnText"> Minted Works</div>
+            </button>
+          </div>
+
+          <div class="w-100 mt-1">
+            <button class="btn p_btn_img">
+              <div class="p_img_btn">
+                <img src="images/icons/suitcase-portfolio-1.svg" class="image_buttons" />
+              </div>
+              <div class="btnText">CV</div>
             </button>
           </div>
 
@@ -114,124 +132,13 @@
       </div>
 
       <!-- Start Information -->
+
       <div class="information">
         <div class="wrapper_info">
           <div class="Information_text">Information</div>
 
-          <!-- Black Buttons -->
-          <div class="d-flex mt-4 justify-content-between">
-            <button class="btn mint_btn_deactive">Burn Token</button>
-            <button class="btn mint_btn">Ship Certificate</button>
-          </div>
-
-          <!-- Input Links (Artlink) -->
-          <div class="d-flex mt-3 justify-content-between">
-            <div class="w_48">
-              <div class="fs_14 mb-1">ArtLink</div>
-              <div class="position-relative">
-                <input type="text" class="input_link" id="ArtLink" />
-                <!-- copy text to clip board -->
-                <div class="p_copy_text">
-                  <button
-                    class="btn"
-                    onclick="copyLink('ArtLink',true)"
-                    onmouseout="outFunc()"
-                  >
-                    <div class="p_imgCopy">
-                      <img src="images/icons/Copy.svg" />
-                      <span class="toolTip" 
-                        >Copy To ClipBoard</span
-                      >
-                    </div>
-                  </button>
-                </div>
-
-              </div>
-            </div>
-            <div class="w_48">
-              <div class="fs_14 mb-1">ChainCode</div>
-              <div class="position-relative">
-                <input type="text" class="input_link" id="ChainCode" />
-                <!-- copy text to clip board -->
-                <div class="p_copy_text">
-                  <button
-                    class="btn"
-                    onclick="copyLink('ChainCode',true)"
-                    onmouseout="outFunc()"
-                  >
-                    <div class="p_imgCopy">
-                      <img src="images/icons/Copy.svg" />
-                      <span class="toolTip" 
-                        >Copy To ClipBoard</span
-                      >
-                    </div>
-                  </button>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- Images Information -->
-          <div class="p_img_info1">
-            <div class="me-3 mt-2">
-              <div
-                class="img_information"
-                style="background-image: url(images/img\ information.png)"
-              ></div>
-            </div>
-            <div class="me-3 mt-2">
-              <div
-                class="img_information"
-                style="background-image: url(images/img\ information.png)"
-              ></div>
-            </div>
-            <div class="me-3 mt-2">
-              <div
-                class="img_information"
-                style="background-image: url(images/img\ information.png)"
-              ></div>
-            </div>
-            <div class="me-3 mt-2">
-              <div
-                class="img_information"
-                style="background-image: url(images/img\ information.png)"
-              ></div>
-            </div>
-            <div class="mt-2">
-              <div
-                class="img_information"
-                style="background-image: url(images/img\ information.png)"
-              ></div>
-            </div>
-          </div>
-
-          <div class="Creator_text">Creator</div>
-
-          <div class="bg_user_verification">
-            <div class="d-flex">
-              <img src="images/icons/Info.svg" class="me_12" />
-              <div class="fs_14">Artist has not yet signed up</div>
-            </div>
-          </div>
-
-          <!-- artist -->
-          <div class="d-flex justify-content-between mt-3">
-            <div class="d-flex align-items-center">
-              <div
-                class="img_artist"
-                style="background-image: url(images/guy.png)"
-              ></div>
-              <div class="artist_name">Esther Howard</div>
-            </div>
-            <button class="btn btn_gray d-flex align-items-center">
-              <div class="view_text me-2">View Creator</div>
-              <img src="images/icons/Arrow right.svg" />
-            </button>
-          </div>
-
-          <div class="line mt-3"></div>
-
+          <!-- Information -->
+          <div class="fw_500 mt-4">Information</div>
           <div class="d-flex justify-content-between mt-2">
             <div class="d-flex align-items-center">
               <div class="name_text">Name :</div>
@@ -249,62 +156,164 @@
 
           <div class="line mt-2"></div>
 
-          <div class="d-flex justify-content-between mt-2">
+          <div class="d-flex justify-content-between pb-2 pt-3">
             <div class="d-flex align-items-center">
-              <div class="name_text">Medium :</div>
-              <div class="name_value">Painting - Oil on paper</div>
+              <div class="name_text">Email* :</div>
+              <div class="name_value">Amir4002@yahoo.com</div>
             </div>
-            <button
-              class="btn btn_text_primary d-flex align-items-center"
-              data-bs-toggle="modal"
-              data-bs-target="#EditMedium"
-            >
-              <img src="images/icons/Edit.svg" class="me-2" />
-              <div class="edit_text text-primary">Edit</div>
-            </button>
           </div>
 
-          <div class="Creator_text1">Holder</div>
+          <div class="line mt-2"></div>
 
+          <div class="d-flex justify-content-between mt-2">
+            <div class="d-flex flex-column">
+              <div class="creator_text">Creator</div>
+              <div class="name_value1">Here is for user statuse</div>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <button class="btn btn_lock me-2">
+                <img src="images/icons/Lock.svg" class="lock_cion" />
+              </button>
+              <div class="edit_text text-primary">
+                <!-- Rounded switch -->
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- User Status -->
+          <div class="Creator_text1">User statuse</div>
+
+          <div class="bg_user_status">
+            <div class="text_item_status">
+              <span class="badge__dot badgeBlue"></span>Instagram
+            </div>
+
+            <!-- copy text to clip board -->
+            <div class="link_status">
+              <div class="status_link" id="link_user">
+                https://www.IG.com/Username
+              </div>
+              <div class="p_tooltip">
+                <button
+                  class="btn"
+                  onclick="copyLink('link_user',false)"
+                  onmouseout="outFunc()"
+                >
+                  <div class="p_imgCopy">
+                    <img src="images/icons/Copy.svg" />
+                    <span class="toolTip">Copy To ClipBoard</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <button class="btn btn_text_primary d-flex align-items-center">
+                <img src="images/icons/Check - Circle.svg" class="me-2" />
+                <div class="edit_text text-primary">Verified</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- User Verfication -->
           <div class="bg_user_verification">
             <div class="d-flex">
               <img src="images/icons/Check - Circle.svg" class="me_12" />
               <div class="fs_14">User signed up</div>
             </div>
 
-            <div class="d-flex">
-              <img src="images/icons/Info.svg" class="me_12" />
+            <div class="d-flex me-4">
+              <img src="images/icons/Check - Circle.svg" class="me_12" />
               <div class="fs_14">Identity has not been verified.</div>
             </div>
           </div>
 
-          <!-- artist -->
-          <div class="d-flex justify-content-between mt-3">
-            <div class="d-flex align-items-center">
-              <div
-                class="img_artist"
-                style="background-image: url(images/guy1.png)"
-              ></div>
-              <div class="artist_name">Lora WindStorm</div>
+          <!-- Contact Info -->
+          <div class="bg_Contact_Info">
+            <div class="p_contact_info" onclick="ToogleWhiteSection()">
+              <div class="fs12fw500">Contact Info</div>
+              <img src="images/icons/Arrow down.svg" />
             </div>
-            <button class="btn btn_gray d-flex align-items-center">
-              <div class="view_text me-2">View Holder</div>
-              <img src="images/icons/Arrow right.svg" />
-            </button>
+
+            <div class="line98"></div>
+
+            <!-- white sections -->
+            <div class="section_item_space">
+              <div class="items1">
+                <div class="item">
+                  <span class="badge__dot badgeBlue me-2"></span>Website
+                </div>
+                <div>
+                  <button class="btn btn_remove">
+                    <img src="images/icons/Remove.svg" class="me-2" />Remove
+                  </button>
+                </div>
+              </div>
+              <div class="items1">
+                <div class="item d-flex align-items-center">
+                  <div id="link_section">https://www.joe8lee.net</div>
+                  <div class="p_tooltip btn_copy_section">
+                    <button
+                      class="btn"
+                      onclick="copyLink('link_section',false)"
+                      onmouseout="outFunc()"
+                    >
+                      <div class="p_imgCopy">
+                        <img src="images/icons/Copy.svg" />
+                        <span class="toolTip">Copy To ClipBoard</span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button Add another -->
+            <div>
+              <button class="btn btn_add">
+                <img src="images/icons/Plus - Circle.svg" class="me-2" />Add
+                Another
+              </button>
+            </div>
+
+            <!-- forms -->
+            <div class="p_forms">
+              <div class="p_select_type">
+                <select class="form-select" aria-label="Default select example">
+                  <option class="option" value="1" selected>One</option>
+                  <option class="option" value="2">Two</option>
+                  <option class="option" value="3">Three</option>
+                </select>
+              </div>
+              <input type="text" class="input_field" placeholder="Type "/>
+              <button class="btn buttonp4" id="deleteForms">
+                  <img src="images/icons/Close - Circle.svg"/>
+              </button>
+              <button class="btn buttonp4" >
+                <img src="images/icons/Check.svg"/>
+                </button>
+            </div>
           </div>
 
           <!-- Timeline -->
           <div class="mt_35">
             <div class="d-flex justify-content-between">
               <div class="fw_500 mb-1">Timeline</div>
-              <div class="p_button_timeLine">
+
+              <!-- buttons -->
+              <div class="p_button_timeLine_1">
                 <button class="btn btn_active_timeline btn_timeLine">
                   All
                 </button>
                 <button class="btn btn_timeLine">Certificate</button>
-                <button class="btn btn_timeLine">Transfer</button>
               </div>
             </div>
+
             <div class="P_itemsTimeLine mt-4">
               <div>
                 <div class="d-flex align-items-center justify-content-between">
@@ -313,7 +322,9 @@
                       <img src="images/icons/Ellipse.svg" class="elips_pic" />
                       <span class="line_elips"></span>
                     </div>
-                    <div class="fs_14">Certificate Requested</div>
+                    <div class="fs_14">
+                      User Minted “<a href="#">Black Swan</a>” as creator
+                    </div>
                   </div>
                   <div class="d-flex">
                     <div class="fs12_clGray me-3">28-10-2021</div>
@@ -336,7 +347,9 @@
                       <img src="images/icons/Ellipse.svg" class="elips_pic" />
                       <span class="line_elips"></span>
                     </div>
-                    <div class="fs_14">Artwork Minted</div>
+                    <div class="fs_14">
+                      User Minted “<a href="#">Black Swan</a>” as 2ndy owner
+                    </div>
                   </div>
                   <div class="d-flex">
                     <div class="fs12_clGray me-3">28-10-2021</div>
@@ -359,7 +372,7 @@
                       <img src="images/icons/Ellipse.svg" class="elips_pic" />
                       <span class="line_elips"></span>
                     </div>
-                    <div class="fs_14">Artwork Created</div>
+                    <div class="fs_14">Contact created</div>
                   </div>
                   <div class="d-flex">
                     <div class="fs12_clGray me-3">28-10-2021</div>
@@ -514,52 +527,6 @@
               <!-- button update -->
               <div>
                 <button class="btn btn_update">Update Name</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--  Modal ( Edit Medium ) -->
-    <div class="modal fade" id="EditMedium">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content modal_info">
-          <!-- Modal body -->
-          <div class="modal-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="header_modal">Edit Medium</div>
-              <div data-dismiss="modal">
-                <img
-                  src="/images/icons/Close.svg"
-                  class="btn_close"
-                  data-bs-dismiss="modal"
-                />
-              </div>
-            </div>
-
-            <!-- form selct -->
-            <form>
-              <div class="mt-4 mb-1">
-                <div class="fs14fw500 mb-1">Medium :</div>
-                <select class="form-select" aria-label="Default select example">
-                  <option class="option" value="1" selected>One</option>
-                  <option class="option" value="2">Two</option>
-                  <option class="option" value="3">Three</option>
-                </select>
-              </div>
-              <div class="mt-2 mb-1">
-                <div class="fs14fw500 mb-1">Style :</div>
-                <select class="form-select" aria-label="Default select example">
-                  <option value="1" selected>One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-
-              <!-- button update -->
-              <div>
-                <button class="btn btn_update">Update Medium</button>
               </div>
             </form>
           </div>

@@ -132,6 +132,12 @@
     height: 1px;
     background-color: #EEF0F3;
 }
+.line98{
+    width: 95%;
+    height: 1px;
+    background-color: #EEF0F3;
+    margin: auto;
+}
 
 .p_img_btn{
     position: relative;
@@ -251,6 +257,15 @@
     margin-top: 14px;
     justify-content: space-between;
 }
+.bg_user_status{
+    display: flex;
+    background-color: #F7F8FA;
+    align-items: center;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 14px;
+    justify-content: space-between;
+}
 .me_12{
     margin-right: 12px;
 }
@@ -290,10 +305,21 @@
     color: #83909D;
     font-weight: 500;
 }
+.creator_text{
+    font-size: 14px;
+    color: #242328;
+    font-weight: 500;
+}
 .name_value{
     font-weight: 400;
     font-size: 14px;
     margin-left: 12px;
+}
+.name_value1{
+    font-weight: 400;
+    font-size: 12px;
+    color: #83909D;
+    margin-top: 5px;
 }
 .btn_text_primary {
     padding-right: 5px;
@@ -355,8 +381,24 @@
     font-size: 14px;
     color: #A8B3BC;
 }
-.input_link:focus{
+.input_field{
+    flex: 1;
+    padding: 4px 30px 4px 10px;
+    border-radius: 6px;
+    border: 2px solid #EEF0F3;
+    font-size: 14px;
+    color: #242328;
+}
+.input_field::placeholder{
+    font-size: 14px;
+    color: #A8B3BC;
+}
+.input_link:focus , .input_field:focus{
     outline: 2px solid #3772FF;
+}
+.p_select_type{
+    width: 37%;
+    margin-right: 7px;
 }
 .option{
     font-size: 14px;
@@ -394,6 +436,11 @@
 }
 .p_button_timeLine{
     width: 258px;
+    display: flex;
+    align-items: center;
+}
+.p_button_timeLine_1{
+    width: 155px;
     display: flex;
     align-items: center;
 }
@@ -617,6 +664,13 @@
     font-size: 12px;
     padding: 7px 0;
 }
+.items1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px 0;
+}
 .section_item{
     margin-top: 12px;
     background-color: white;
@@ -645,4 +699,213 @@
 .p_btn_gray{
     position: relative;
     bottom: 8px;
+}
+
+/* switch slide */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 2px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #3772FF;
+    opacity: 0.6;
+
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #3772FF;
+
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* end switch slide */
+
+  .btn_lock{
+      position: relative;
+      border-radius: 50px;
+      padding: 5px;
+      left: 2px;
+  }
+  .btn_lock:hover{
+      background-color: #F7F8FA;
+  }
+  .lock_cion{
+      position: relative;
+      bottom: 1.5px;
+  }
+  .text_item_status{
+      font-size: 12px;
+      color: #83909D;
+      font-weight: 500;
+  }
+  .status_link{
+    font-size: 12px;
+    color: #83909D;
+    font-weight: 500;
+    max-width: 290px;
+  }
+  .link_status{
+      display: flex;
+      align-items: center;
+  }
+  .link{
+      cursor: pointer;
+      color: #3772FF;
+  }
+  a{
+      text-decoration: none;
+  }
+  .bg_Contact_Info{
+      width: 100%;
+      background-color: #F7F8FA;
+      border-radius: 6px;
+      margin-top: 20px;
+      padding-bottom: 1px;
+  }
+  .fs12fw500{
+      font-size: 12px;
+      font-weight: 500;
+  }
+  .p_contact_info{
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 10px 12px;
+  }
+.section_item_space{
+    background-color: white;
+    border-radius: 6px;
+    padding: 8px 14px 8px 14px;
+    margin: 12px 12px 10px 12px;
+}
+.btn_remove{
+    color: #3772FF;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    left: 14px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.btn_remove:hover{
+    color: #3772FF;
+}
+.btn_copy_section{
+    position: relative;
+    bottom: 1px;
+    margin-left: 2px;
+}
+.btn_add{
+    color: #3772FF;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.btn_add:hover{
+    color: #3772FF;
+}
+
+/* copy text tooltip */
+.p_tooltip{
+    display: flex;
+}
+.p_imgCopy{
+    position: relative;
+}
+.toolTip{
+    position: absolute;
+    background-color: #242328;
+    opacity: 0.80;
+    font-size: 12px;
+    border-radius: 8px;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: fit-content;
+    color: white;
+    padding: 7px 15px;
+    white-space: nowrap;
+    visibility: hidden;
+}
+.p_imgCopy:hover .toolTip{
+    visibility: visible;
+}
+
+
+.p_copy_text{
+    display: inline-block;
+    position: absolute;
+    right: -5px;
+    bottom: -1px;
+}
+.openTab{
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+.buttonp4{
+    padding: 4px;
+}
+.p_forms{
+    margin: 2px 12px 14px 12px;
+    display: flex;
+}
+.form-select{
+    border: 1.5px solid #EEF0F3;
+    color: #83909D;
+    font-size: 14px;
 }

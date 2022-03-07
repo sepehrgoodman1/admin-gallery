@@ -1,30 +1,41 @@
-// copy text to clipboard
-var artlink_clipboard = new ClipboardJS("#btn_artlink");
-var chain_clipboard = new ClipboardJS("#btn_chaincode");
 
-artlink_clipboard.on("success", function (e) {
-  console.info("Action:", e.action);
-  console.info("Text:", e.text);
-  console.info("Trigger:", e.trigger);
+// copy text to clip board on (text field)
+function copyLink(link, inputFiled) {
+  if(!inputFiled){
+    var copyText = document.getElementById(link);
 
-  e.clearSelection();
-});
-artlink_clipboard.on("error", function (e) {
-  console.error("Action:", e.action);
-  console.error("Trigger:", e.trigger);
-});
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText.innerText);
 
-chain_clipboard.on("success", function (e) {
-  console.info("Action:", e.action);
-  console.info("Text:", e.text);
-  console.info("Trigger:", e.trigger);
+    // set tool tip text
+    var tooltip = document.getElementsByClassName("toolTip");
+    for(let i =0; i<tooltip.length ; i++){
+        tooltip[i].innerHTML="Copied: " + copyText.innerText;
+    }
+  }
+  else {
+    var copyText = document.getElementById(link);
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
 
-  e.clearSelection();
-});
-chain_clipboard.on("error", function (e) {
-  console.error("Action:", e.action);
-  console.error("Trigger:", e.trigger);
-});
+    // set tool tip text
+    var tooltip = document.getElementsByClassName("toolTip");
+    for(let i =0; i<tooltip.length ; i++){
+        tooltip[i].innerHTML="Copied: " + copyText.value;
+    }
+  }
+  
+}
+
+// when unhover , we change text to default
+function outFunc() {
+  var tooltip = document.getElementsByClassName("toolTip");
+    for(let i =0; i<tooltip.length ; i++){
+        tooltip[i].innerHTML="Copy to clipboard";
+    }
+}
+
 
 // add or remove class ( time line buttons )
 $(".btn_timeLine").click(function () {
@@ -37,3 +48,19 @@ $(".btn_section").click(function () {
   $(".btn_section").removeClass("btn_section_active");
   $(this).addClass("btn_section_active");
 });
+
+
+// open and close tab
+function ToogleWhiteSection(){
+  $('.section_item_space').toggleClass('openTab')
+}
+
+// remove section 
+$('.btn_remove').click(function(){
+  $(this).parent().parent().parent().fadeOut()
+})
+
+$('#deleteForms').click(function(){
+  $(this).parent().fadeOut()
+})
+
