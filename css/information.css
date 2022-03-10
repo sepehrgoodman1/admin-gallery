@@ -909,3 +909,24 @@
     color: #83909D;
     font-size: 14px;
 }
+.btn_primaryFull{
+    width: 100%;
+    background-color: #3772FF;
+    border-radius: 12px;
+    padding: 12px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.btn_primaryFull:hover{
+    color: white;
+}
+.text_modal{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+    
+}
+
+

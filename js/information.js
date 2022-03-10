@@ -64,3 +64,8 @@ $('#deleteForms').click(function(){
   $(this).parent().fadeOut()
 })
 
+
+// add another button (add forms)
+$('#add_another').click(function(){
+  $("#form_add_another").fadeIn()
+})

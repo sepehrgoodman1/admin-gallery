@@ -34,3 +34,5 @@ selectAll.addEventListener('change', function(){
         })
     }
 })
+
+
