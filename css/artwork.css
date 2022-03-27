@@ -213,6 +213,15 @@
     background-position: center;
     border-radius: 8px;
 }
+.img_art1{
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+}
+
 .img_artist{
     width: 64px;
     height: 64px;
@@ -401,4 +410,34 @@
     padding: 5px 7px;
     border-radius: 50px;
 }
+.btn_arrow{
+    border-radius: 50px;
+}
+.btn_arrow:focus{
+    box-shadow: none;
+}
+.p_artworkList{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.btn_arrow{
+    position: relative;
+    bottom: 2.5px;
+    right: 5px;
+    padding: 5px;
+}
+.titleArt{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px
+}
+.artist_name{
+    font-size: 14px;
+    font-weight: 500;
+    color: #83909D;
+}
+.edition{
+    margin-left: 60px;
 
+}
