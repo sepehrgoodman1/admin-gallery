@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.WrapperDash{
+    margin: 100px 10%;
+}
+.TextDash{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.NavBarFix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 10%;
+    border-bottom: 1px solid #EEF0F3;
+    background-color: white;
+    z-index: 1000;
+}
+.TextNav{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px 15px;
+    cursor: pointer;
+}
+.P_Nav{
+    position: relative;
+    right: 12px;
+    display: flex;
+}
+.Overview{
+    background: #FCFCFC;
+    border-radius: 8px;
+    padding: 20px;
+}
+.UserContent{
+    background: #F7F8FA;
+    border-radius: 8px;
+    padding: 20px;
+    flex:1;
+    margin-right: 25px;
+}
+.OvText{
+    font-size: 20px;
+    font-weight: 600;
+}
+.PurpleBox{
+    display: inline-block;
+    background: #CABDFF;
+    border-radius: 4px;
+    width: 16px;
+    height: 32px;
+    margin-right: 15px;
+    position: relative;
+    top: 9px;
+}
+.OrangeBox{
+    display: inline-block;
+    background: #FFBC99;
+    border-radius: 4px;
+    width: 16px;
+    height: 32px;
+    margin-right: 15px;
+    position: relative;
+    top: 9px;
+}
+
+.P_OvText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Form{
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    border: 2px solid #EFEFEF;
+    color: #6F767E;
+}
+.WeeklyInfoGreen{
+    background-color: #B5E4CA40;
+    width: 49%;
+    padding: 35px;
+    border-radius: 12px;
+    position: relative;
+}
+.WeeklyInfoBlue{
+    background-color:#B1E5FC40;
+    width: 49%;
+    padding: 35px;
+    border-radius: 12px;
+    position: relative;
+}
+.P_WeeklyInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.ArtworkText{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.AmountSalary{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 52px;
+}
+.Text1{
+    font-weight: 700;
+    font-size: 12px;
+    color: #6F767E;
+    background: #FCFCFC;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 3px;
+}
+.Up{
+    margin-right: 4px;
+    position: relative;
+    bottom: 1px;
+}
+.SmallChart{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+}
+.User{
+    font-size: 40px;
+    font-weight: 600;
+    color: #272B30;
+    margin-top: 18px;
+}
+.Total{
+    font-size: 20px;
+    font-weight: 600;
+}
+.Customer{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 32px;
+}
+.GreenArea{
+    color: #83BF6E;
+    background-color: #EAFAE5;
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+.Text2{
+    font-size: 12px;
+    font-weight: 700;
+    color: #9A9FA5;
+    margin-top: 5px;
+}
+.UserList{
+    padding: 33px 0;
+    border-top: 1px solid #EFEFEF;
+    margin-top: 38px;
+    margin-right: 80px;
+}
+.WelcomeText{
+    font-size: 15px;
+    font-weight: 500;
+    color: #6F767E;
+    max-width: 240px;
+}
+.NewUser{
+    color: #272B30;
+    font-weight: 600;
+}
+.ListOfUsers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+    margin-left: 50px;
+}
+.UserName{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+}
+.Avatar{
+    border-radius: 50px;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.FlexBox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.Certificates{
+    width: 340px;
+    background: #F7F8FA;
+    border-radius: 8px;
+    padding: 20px 23px;
+    height: fit-content;
+    position: relative;
+}
+.Artwork{
+    display: inline-block;
+    margin-left: 12px;
+    flex: 1;
+}
+.NameArtwork{
+    font-size: 15px;
+    font-weight: 700;
+    flex: 1;
+}
+.Request{
+    font-size: 15px;
+    font-weight: 500;
+}
+.ArtId{
+    font-weight: 500;
+    color: #9A9FA5;
+}
+.ImgArtwork{
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.ItemArt{
+    margin-top: 35px;
+    display: flex;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #EFEFEF;
+}
+.P_NameArtwork{
+    display: flex;
+    justify-content: space-between;
+}
+.Time{
+    font-size: 13px;
+    font-weight: 600;
+    color: #9A9FA5;
+}
+.BtnCertificate{
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid #EFEFEF;
+    border-radius: 12px;
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+}
+.LineFake{
+    display: block;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: #F7F8FA;
+    position: absolute;
+    z-index: 1;
+    bottom: 78px;
+}
